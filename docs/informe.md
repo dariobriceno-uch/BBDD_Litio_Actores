@@ -1,0 +1,406 @@
+---
+layout: default
+title: Informe — BBDD Actores de la Gobernanza del Litio en Chile
+---
+
+# Base de Datos de Actores de la Gobernanza del Litio en Chile
+
+**Informe de presentación**
+
+*Las referencias completas de las obras citadas están en
+`references/referencias.bib` del repositorio. Todos los conteos reportados en
+la sección 4 fueron verificados programáticamente contra la base
+(`scripts/build_processed.py`).*
+
+---
+
+## 1. Introducción al caso
+
+La transición energética global depende de un conjunto acotado de minerales
+críticos, y el litio está en el centro de esa dependencia: es insumo esencial de
+las baterías que hacen posible la movilidad eléctrica y el almacenamiento de
+energía renovable (Vera et al., 2023; Sánchez-López, 2023). Los depósitos más
+competitivos del mundo se concentran en el llamado Triángulo del Litio —los
+salares altoandinos de Chile, Argentina y Bolivia—, donde Chile acumula
+aproximadamente un tercio de las reservas mundiales conocidas y el Salar de
+Atacama aporta cerca del 70% del litio de salmuera que se produce en el mundo
+(Gutiérrez & Ruiz-León, 2024; Jerez, Garcés & Torres, 2021). La forma en que
+se gobierne esa riqueza tiene, además, consecuencias fiscales de primer orden
+para el país (Olivares, Lagos & Singer, 2025).
+
+El caso chileno tiene dos rasgos que lo particularizan: su modo de extracción y
+el conflicto hídrico que este produce. El litio se obtiene bombeando salmuera
+desde el núcleo del salar hacia piscinas de evaporación solar, en una cuenca
+hidrológica cerrada donde la evidencia documenta pérdida de superficie de
+lagunas y humedales (Vera et al., 2023; Jerez et al., 2021). A esto se añade un
+estatus legal peculiar: la salmuera se administra como concesión minera y no
+como agua, de modo que las comunidades del salar carecen de standing jurídico
+sobre el recurso que más directamente afecta su forma de vida (Lunde
+Seefeldt, 2022).
+
+La gobernanza que procesa estas tensiones es fragmentada, episódica y
+multiactor. Las decisiones no ocurren en una sola mesa: se dispersan en hitos
+sucesivos —la renegociación CORFO–SQM de 2018, la Estrategia Nacional del Litio
+de 2023 (Gobierno de Chile, 2023), la asociación Codelco–SQM y la creación de
+NovaAndino en 2025, las consultas indígenas bajo el Convenio 169 de la OIT y el
+cambio de gobierno de 2026—, y cada hito convoca una constelación distinta de
+agencias estatales, empresas, comunidades, academia y ONGs (Barandiarán, 2019;
+Johnson et al., 2024). Entre esos actores están las comunidades del Salar de
+Atacama —territorio ancestral atacameño/lickanantay—, cuyas posiciones frente a
+la industria no son homogéneas: van desde acuerdos negociados de beneficios
+compartidos hasta la oposición abierta, pasando por amplias zonas de
+ambivalencia (Lorca et al., 2022; O'Faircheallaigh & Babidge, 2023).
+
+Estudiar un campo así, disperso y cambiante, exige como condición previa un
+registro sistemático de sus actores, algo que hasta ahora no existía. Este
+informe presenta la primera base de datos de actores de la gobernanza del litio
+en Chile: reúne a quienes son o han sido relevantes para la extracción del
+litio, sin pronunciarse sobre la posición de cada uno, y documenta su
+justificación conceptual (sección 2), su construcción documental (sección 3) y
+su contenido (sección 4). La lista está pensada como insumo para un eventual
+análisis de redes sociales (SNA).
+
+## 2. Redes de gobernanza y la variabilidad de actores del campo
+
+Lo primero que muestra el caso es la extraordinaria variabilidad de sus
+actores. El campo del litio chileno es multiactor y multisectorial, y las
+categorías de la propia base reflejan esa diversidad: empresas operadoras y su
+cadena de valor —SQM, Albemarle, Codelco y NovaAndino, junto a las firmas de
+tecnología de extracción directa (DLE)—; instituciones estatales y reguladores,
+como CORFO, el Ministerio de Minería, la Superintendencia del Medio Ambiente y
+Cochilco; comunidades territoriales y dirigencias indígenas, con el Consejo de
+Pueblos Atacameños y las comunidades del salar; academia y centros de
+investigación; ONGs y organizaciones ambientales; organismos internacionales,
+de CEPAL a la cooperación alemana (GIZ/BGR) y la banca multilateral; actores
+financieros; servicios profesionales y consultoras; y sindicatos y gremios,
+como el Consejo Minero y SONAMI (Johnson et al., 2024; Fuentes et al., 2024).
+
+Estos actores, sin embargo, no son casillas. Los mismos individuos aparecen en
+varias categorías a la vez: hay personas que integran simultáneamente
+directorios estatales, directorios corporativos y claustros académicos. La
+posición de un actor en el campo no es su etiqueta sectorial sino la
+superposición de todas sus membresías —la intuición clásica de la dualidad de
+personas y grupos (Breiger, 1974), según la cual las personas se definen por
+los círculos a los que pertenecen y los círculos por las personas que los
+componen.
+
+Esta doble constatación —diversidad de actores y pluralidad de posiciones—
+es lo que lleva a la perspectiva de redes. La literatura sobre gobernanza
+ambiental muestra de manera consistente que la estructura relacional del campo
+—quién se sienta con quién, quién intermedia entre quiénes— condiciona la
+coordinación, la influencia y la exclusión, más allá de las reglas formales
+(Bodin & Crona, 2009; Bodin, 2017). La gobernanza colaborativa de recursos
+naturales es, en un sentido preciso, un problema de redes: los patrones de
+lazos entre actores determinan qué problemas de acción colectiva pueden
+resolverse y cuáles se enquistan (Bodin et al., 2019; Hedlund, Bodin &
+Nohrstedt, 2021; Angst et al., 2018).
+
+Aplicado a la minería y al litio, el estado del arte deja un vacío visible. Lo
+que existe es de tres tipos: (a) el litio modelado como red de comercio y
+competencia entre países y firmas, en la tradición de las redes de cadenas de
+suministro (Shao, Hu & Zhang, 2021; Hao et al., 2022); (b) análisis de redes
+de actores mineros para otros minerales y contextos, mayormente transversales
+y unimodales (Poveda-Bautista et al., 2022; Fuentes et al., 2024); y (c) el
+stakeholder analysis relacional en la gestión de recursos naturales (Prell,
+Hubacek & Reed, 2009; Reed et al., 2009). Lo que falta es el eslabón inicial:
+nadie ha registrado sistemáticamente a los actores que gobiernan el litio en
+su punto de origen.
+
+Las redes que esta lista de actores permitiría construir son, ante todo, redes
+de afiliación: bipartitas actor–organización y actor–evento, con capacidad de
+proyección unimodal. Existen enfoques consolidados que trabajan con este tipo
+de datos —por ejemplo, la dualidad de personas y grupos de Breiger (1974), los
+modelos de interlocks de directorios (Robins & Alexander, 2004; Koskinen &
+Edling, 2012) o las mediciones de estatus acumulado en redes bipartitas de
+carreras de elite (Larsen, Lunding & Ellersgaard, 2025)—, y todos ellos
+requieren como punto de partida una matriz de incidencia como la que esta base
+provee.
+
+La precondición de todo lo anterior es un registro de actores con cobertura
+amplia, categorización sectorial y afiliaciones documentadas. Ese es el aporte
+del presente informe: no un análisis de red, sino la infraestructura de datos
+que lo hace posible.
+
+## 3. Metodología
+
+La base se construyó por recolección documental a partir de tres tipos de
+fuente: (i) prensa y medios especializados, mediante un corpus de noticias del
+sector con recolección asistida por scrapers y revisión manual; (ii) fuentes
+secundarias, en particular literatura académica e informes de organismos; y
+(iii) documentos primarios: actas y registros de comisiones e instancias de
+gobernanza, memorias corporativas y registros de participación en foros y
+eventos. La triangulación entre tipos de fuente es práctica establecida en la
+recolección de datos de red (Rice et al., 2014), y responde a la advertencia
+clásica de que la calidad de un análisis de redes nunca supera la calidad de
+la medición que lo sustenta (Marsden, 1990).
+
+Frente a las alternativas de encuesta o entrevista, la vía documental se
+justifica por las características del campo: un universo de elites,
+longitudinal y de acceso difícil. Sus ventajas son cuatro: (a) cobertura
+amplia en años, imposible de reconstruir retrospectivamente por encuesta; (b)
+no reactividad, pues no depende de la disposición ni del recuerdo de actores
+de elite; (c) replicabilidad y auditabilidad, ya que cada afiliación registrada
+tiene fuente; y (d) cobertura de actores inaccesibles. Existen precedentes
+consolidados: redes de políticas reconstruidas desde archivos de prensa y
+testimonio parlamentario (Leifeld, 2017), interlocks desde registros de
+directorios (Koskinen & Edling, 2012) y redes desde registros de contratos
+públicos (Waxenecker & Prell, 2024). La limitación correlativa debe declararse:
+el sesgo de visibilidad mediática hace que los actores periféricos —en
+especial los comunitarios— tiendan al subregistro.
+
+La unidad de registro es el actor —persona u organización— con participación
+documentada en el ecosistema del litio chileno. El criterio de afiliación es
+la membresía institucional formal (cargo, directorio, comisión), excluyendo
+roles de oposición o asesoría externa. Los campos estándar por entrada son:
+nombre, tipo o rol, institución, período, rol en el litio, cruces de
+multiafiliación y fuente. La organización general es en pestañas por tipo de
+actor, más módulos transversales de multiafiliación y de foros.
+
+## 4. Resultados: descripción de la base de datos
+
+La base se organiza en 14 pestañas de tres tipos: (a) nueve pestañas temáticas
+por tipo de actor, con 1.402 entradas en total; (b) un módulo de foros y
+eventos con tres pestañas (base de participaciones, índice de eventos y nodos
+centrales); y (c) dos pestañas transversales de multiafiliación. La tabla 1
+resume la estructura; el detalle de campos e inconsistencias está en
+`data/data_dictionary.md` del repositorio.
+
+**Tabla 1. Estructura de la base de datos**
+
+| Pestaña | Tipo | N | Campos principales |
+|---|---|---:|---|
+| Academia e Investigación | Temática | 374 | nombre, tipo, institución, director, investigadores, código, período |
+| Empresas Mineras | Temática | 255 | nombre, tipo/rol, país, descripción, período |
+| Instituciones Estatales | Temática | 216 | nombre, cargo, institución, gobierno, rol en litio, período |
+| ONGs y Ambiente | Temática | 199 | nombre, tipo, país, rol en litio, período, escala de acción |
+| Comunidades Territoriales | Temática | 183 | nombre, tipo, pueblo, ubicación, dirigente, cargo, período |
+| Organismos Internacionales | Temática | 75 | nombre, tipo, país/región, rol en litio Chile, período |
+| Servicios Prof. y Consultoras | Temática | 47 | nombre, tipo, país, rol/relación con litio, período |
+| Actores Financieros | Temática | 34 | nombre, tipo, país, rol/relación con litio, período |
+| Sindicatos y Gremios | Temática | 19 | nombre, tipo, país, cargo/rol, período |
+| Foros — Base Completa | Foros | 1.404 | actor, tipo, organización, cargo, participación, evento, fecha, país, fuente |
+| Foros — Índice de Eventos | Foros | 104 | evento, organizador, fecha, tipo, alcance, fuente |
+| Foros — Nodos Centrales | Foros | 132 | actor, organización principal, n° eventos, ámbitos |
+| Cruces Multiafiliación | Multiafiliación | 61 | actor, afiliaciones simultáneas, tipo de cruce, detalle |
+| Multiafiliación (matriz) | Multiafiliación | 65 / 305 | actor × sector: organización, cargo, período |
+
+*N = entradas con contenido, excluyendo filas decorativas. En la matriz de
+multiafiliación se reportan actores / afiliaciones actor–organización.*
+
+El peso relativo de las categorías describe la fisonomía del campo. Academia e
+investigación es la categoría más numerosa (374 entradas), seguida por las
+empresas mineras y su cadena de valor (255), las instituciones estatales (216),
+las ONGs y organizaciones ambientales (199) y las comunidades territoriales
+(183); completan el universo los organismos internacionales (75), los
+servicios profesionales y consultoras (47), los actores financieros (34) y los
+sindicatos y gremios (19). Los campos se adaptan a cada categoría: las
+pestañas de comunidades y de instituciones estatales registran dirigente,
+cargo y gobierno de pertenencia, mientras que la de empresas distingue la
+cadena de valor y las firmas de tecnología DLE.
+
+El módulo de foros y eventos constituye la capa relacional actor × evento. La
+base de participaciones contiene 1.404 registros —872 de personas y 532 de
+organizaciones— correspondientes a 1.120 actores únicos (646 personas y 474
+organizaciones) en 137 eventos, con campos de cargo, tipo de participación
+(panelista, expositor, keynote, organizador), fecha, país, tema y fuente URL.
+El índice caracteriza 104 de esos eventos por organizador, tipo (multilateral,
+académico, de industria, parlamentario, gubernamental, gremial y
+combinaciones) y alcance: 43 nacionales, 33 globales, 18 regionales y 10 de
+otras escalas (locales e internacionales bilaterales). La pestaña de nodos
+centrales identifica a los 132 actores con participación recurrente; los más
+activos —Aurora Williams con 16 eventos y Máximo Pacheco con 12— ofrecen un
+primer indicio descriptivo de centralidad sin necesidad aún de cálculo formal
+de red.
+
+Las pestañas de multiafiliación registran la superposición de posiciones. La
+pestaña de cruces documenta 61 casos de actores con afiliaciones simultáneas,
+tipificados en ocho categorías: el cruce Estado–Empresa es el más frecuente
+(16 casos), seguido por la "triple frontera" Academia–Estado–ONG (14), los
+tránsitos público→privado (7), los cruces Comunidad–ONG–Academia (6), los
+articuladores internacionales (6), los consultores y actores financieros con
+roles múltiples (5), los cruces Estado–Academia–Empresa (4) y el nodo legal en
+torno al estudio Carey (3). La pestaña matriz despliega el portafolio completo
+de 65 actores multiafiliados —305 afiliaciones actor–organización— en diez
+sectores: operadores de litio, minería ampliada, empresariado no minero,
+regulación y política, centros de pensamiento, sociedad civil ambiental,
+comunidades del salar, mediación y proceso constituyente, con cargo y período
+por afiliación. Esta matriz es, en la práctica, una red bipartita
+actor–organización ya semiestructurada.
+
+Estos datos podrían servir de base para un análisis de redes. La matriz de
+multiafiliación y la base de foros pueden expresarse como matrices de
+incidencia bipartitas —actor × organización y actor × evento—; de hecho, la
+versión procesada del repositorio ya incluye la matriz de multiafiliación en
+formato largo de lista de aristas, y las categorías de pestaña podrían operar
+como atributo sectorial de actores y organizaciones. El análisis dinámico o
+longitudinal, en cambio, no se desprende directamente de esta base: requeriría
+una versión curada, con criterios de inclusión más estrictos, como la que
+alimenta un análisis longitudinal bipartito en curso derivado de este universo.
+Dicho de otro modo, la base reportada aquí es el universo amplio del cual
+podrían derivarse esos subconjuntos analíticos, no el subconjunto analítico en
+sí.
+
+Esta es, hasta donde sabemos, la primera base de datos sistemática de actores
+de la gobernanza del litio en Chile, sin equivalente conocido para el
+Triángulo del Litio. Los trabajos que podría alimentar —en varios casos a
+través de subconjuntos curados— incluyen modelos dinámicos de redes de
+afiliación (SAOM bipartito), análisis de redes discursivas sobre el corpus de
+prensa, comparación con Argentina y Bolivia, e integración con trabajo
+cualitativo y participativo. Sus limitaciones deben declararse con la
+misma claridad: subregistro probable del sector comunitario, dependencia de la
+visibilidad mediática de los actores, y su carácter de base viva —la ventana
+de observación final sigue abierta y requiere actualización continua. En el
+mismo espíritu de transparencia, las inconsistencias menores detectadas en la
+revisión (dos fechas mal digitadas en el índice de eventos, heterogeneidad de
+formato en las fechas de la base de participaciones) están documentadas y
+tratadas en el diccionario de datos del repositorio.
+
+## 5. Cierre
+
+En resumen: un campo de gobernanza fragmentado, episódico y multiactor como el
+del litio chileno exige, para poder estudiarse, saber qué actores lo componen;
+saberlo exige un registro sistemático que hasta ahora no existía; la base de
+datos presentada en este informe lo provee —con cobertura amplia, categorización
+sectorial, afiliaciones documentadas y fuentes auditables— y deja tendido el
+puente hacia un eventual análisis relacional del campo.
+
+---
+
+## Referencias
+
+Angst, M., Widmer, A., Fischer, M., & Ingold, K. (2018). Connectors and
+coordinators in natural resource governance: Insights from Swiss water supply.
+*Ecology and Society, 23*(2), 1. https://doi.org/10.5751/ES-10030-230201
+
+Barandiarán, J. (2019). Lithium and development imaginaries in Chile,
+Argentina and Bolivia. *World Development, 113*, 381–391.
+https://doi.org/10.1016/j.worlddev.2018.09.019
+
+Bodin, Ö. (2017). Collaborative environmental governance: Achieving
+collective action in social-ecological systems. *Science, 357*(6352),
+aaan1114. https://doi.org/10.1126/science.aan1114
+
+Bodin, Ö., & Crona, B. I. (2009). The role of social networks in natural
+resource governance: What relational patterns make a difference? *Global
+Environmental Change, 19*(3), 366–374.
+https://doi.org/10.1016/j.gloenvcha.2009.05.002
+
+Bodin, Ö., Alexander, S. M., Baggio, J., Barnes, M. L., Berardo, R., Cumming,
+G. S., Dee, L. E., Fischer, A. P., Fischer, M., Mancilla García, M., Guerrero,
+A. M., Hileman, J., Ingold, K., Matous, P., Morrison, T. H., Nohrstedt, D.,
+Pittman, J., Robins, G., & Sayles, J. S. (2019). Improving network approaches
+to the study of complex social-ecological interdependencies. *Nature
+Sustainability, 2*(7), 551–559. https://doi.org/10.1038/s41893-019-0308-0
+
+Breiger, R. L. (1974). The duality of persons and groups. *Social Forces,
+53*(2), 181–190. https://doi.org/10.1093/sf/53.2.181
+
+Fuentes, M., Negrete, M., Herrera-León, S., & Kraslawski, A. (2024). Links
+between the actors and mining activities related to the implementation of
+sustainable development principles. *Sustainable Development, 32*(6),
+6763–6787. https://doi.org/10.1002/sd.3054
+
+Gobierno de Chile. (2023). *Estrategia Nacional del Litio: Por Chile y su
+gente*. Ministerio de Minería. https://www.gob.cl/litioporchile/
+
+Gutiérrez, G., & Ruiz-León, D. (2024). Lithium in Chile: Present status and
+future outlook. *Materials Advances, 5*, 7850–7861.
+https://doi.org/10.1039/d4ma00625a
+
+Hao, H., Xing, W., Wang, A., Song, H., Han, Y., Zhao, P., Xie, Z., & Chen, X.
+(2022). Multi-layer networks research on analyzing supply risk transmission of
+lithium industry chain. *Resources Policy, 79*, 102933.
+https://doi.org/10.1016/j.resourpol.2022.102933
+
+Hedlund, J., Bodin, Ö., & Nohrstedt, D. (2021). Policy issue interdependency
+and the formation of collaborative networks. *People and Nature, 3*(1),
+236–250. https://doi.org/10.1002/pan3.10170
+
+Jerez, B., Garcés, I., & Torres, R. (2021). Lithium extractivism and water
+injustices in the Salar de Atacama, Chile: The colonial shadow of green
+electromobility. *Political Geography, 87*, 102382.
+https://doi.org/10.1016/j.polgeo.2021.102382
+
+Johnson, C. A., Clavijo, A., Lorca, M., & Olivera Andrade, M. (2024).
+Bringing the state back in the lithium triangle: An institutional analysis of
+resource nationalism in Chile, Argentina, and Bolivia. *The Extractive
+Industries and Society, 20*, 101534.
+https://doi.org/10.1016/j.exis.2024.101534
+
+Koskinen, J., & Edling, C. (2012). Modelling the evolution of a bipartite
+network—Peer referral in interlocking directorates. *Social Networks, 34*(3),
+309–322. https://doi.org/10.1016/j.socnet.2010.06.001
+
+Larsen, A. G., Lunding, J. A., & Ellersgaard, C. H. (2025). Overlapping
+social circles in historical elite career networks: Measuring accumulated
+social status with 'k-circles' and circle esteem in bipartite networks.
+*Social Networks, 83*, 28–49. https://doi.org/10.1016/j.socnet.2025.04.006
+
+Leifeld, P. (2017). Discourse network analysis: Policy debates as dynamic
+networks. En J. N. Victor, A. H. Montgomery & M. Lubell (Eds.), *The Oxford
+Handbook of Political Networks* (pp. 301–326). Oxford University Press.
+https://doi.org/10.1093/oxfordhb/9780190228217.013.25
+
+Lorca, M., Olivera Andrade, M., Escosteguy, M., Köppel, J., Scoville-Simonds,
+M., & Hufty, M. (2022). Mining indigenous territories: Consensus, tensions
+and ambivalences in the Salar de Atacama. *The Extractive Industries and
+Society, 9*, 101047. https://doi.org/10.1016/j.exis.2022.101047
+
+Lunde Seefeldt, J. (2022). Water as property: Contention between indigenous
+communities and the lithium industry for water rights in Chile. *Latin
+American Policy, 13*(2), 328–353. https://doi.org/10.1111/lamp.12265
+
+Marsden, P. V. (1990). Network data and measurement. *Annual Review of
+Sociology, 16*, 435–463. https://doi.org/10.1146/annurev.so.16.080190.002251
+
+O'Faircheallaigh, C., & Babidge, S. (2023). Negotiated agreements, Indigenous
+peoples and extractive industry in the Salar de Atacama, Chile: When is an
+agreement more than a contract? *Development and Change, 54*(3), 641–670.
+https://doi.org/10.1111/dech.12767
+
+Olivares, F., Lagos, G., & Singer, M. (2025). How to maximize the Chilean
+government's revenue with the National Lithium Strategy? *Resources Policy,
+105*, 105600. https://doi.org/10.1016/j.resourpol.2025.105600
+
+Poveda-Bautista, R., González-Urango, H., Ramírez-Olivares, E., & Diego-Mas,
+J.-A. (2022). Engaging stakeholders in extraction problems of the Chilean
+mining industry through a combined social network analysis–analytic network
+process approach. *Complexity, 2022*, 9096744.
+https://doi.org/10.1155/2022/9096744
+
+Prell, C., Hubacek, K., & Reed, M. (2009). Stakeholder analysis and social
+network analysis in natural resource management. *Society & Natural
+Resources, 22*(6), 501–518. https://doi.org/10.1080/08941920802199202
+
+Reed, M. S., Graves, A., Dandy, N., Posthumus, H., Hubacek, K., Morris, J.,
+Prell, C., Quinn, C. H., & Stringer, L. C. (2009). Who's in and why? A
+typology of stakeholder analysis methods for natural resource management.
+*Journal of Environmental Management, 90*(5), 1933–1949.
+https://doi.org/10.1016/j.jenvman.2009.01.001
+
+Rice, E., Holloway, I. W., Barman-Adhikari, A., Fuentes, D., Brown, C. H., &
+Palinkas, L. A. (2014). A mixed methods approach to network data collection.
+*Field Methods, 26*(3), 252–268. https://doi.org/10.1177/1525822X13518168
+
+Robins, G., & Alexander, M. (2004). Small worlds among interlocking
+directors: Network structure and distance in bipartite graphs. *Computational
+& Mathematical Organization Theory, 10*(1), 69–94.
+https://doi.org/10.1023/B:CMOT.0000032580.12184.c0
+
+Sánchez-López, M. D. (2023). Geopolitics of the Li-ion battery value chain
+and the Lithium Triangle in South America. *Latin American Policy, 14*(1),
+22–45. https://doi.org/10.1111/lamp.12285
+
+Shao, L., Hu, J., & Zhang, H. (2021). Evolution of global lithium competition
+network pattern and its influence factors. *Resources Policy, 74*, 102353.
+https://doi.org/10.1016/j.resourpol.2021.102353
+
+Vera, M. L., Torres, W. R., Galli, C. I., Chagnes, A., & Flexer, V. (2023).
+Environmental impact of direct lithium extraction from brines. *Nature
+Reviews Earth & Environment, 4*(3), 149–165.
+https://doi.org/10.1038/s43017-022-00387-5
+
+Waxenecker, H., & Prell, C. (2024). Corruption dynamics in public
+procurement: A longitudinal network analysis of local construction contracts
+in Guatemala. *Social Networks, 79*, 154–167.
+https://doi.org/10.1016/j.socnet.2024.07.001

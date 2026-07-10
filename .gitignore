@@ -1,0 +1,16 @@
+# Colección local de PDFs con copyright de editoriales: no se publica.
+# Las referencias citadas están en references/referencias.bib
+bibliografía/
+bibliografia/
+
+# Temporales de Office / OneDrive
+~$*
+*.tmp
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
