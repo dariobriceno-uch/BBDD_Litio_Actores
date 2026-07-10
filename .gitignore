@@ -14,3 +14,10 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Quarto (caché y archivos auxiliares de render)
+.quarto/
+docs/*_files/
+# El HTML de Quarto incrusta la CSS de Bootstrap Icons (clases de marca sin
+# usar). No se versiona; el informe se distribuye como PDF.
+docs/informe.html

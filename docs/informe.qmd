@@ -1,18 +1,34 @@
 ---
-layout: default
-title: Informe — BBDD Actores de la Gobernanza del Litio en Chile
+title: "Base de Datos de Actores de la Gobernanza del Litio en Chile"
+subtitle: "Informe de presentación"
+author: "Darío Briceño"
+date: "julio de 2026"
+lang: es
+format:
+  html:
+    toc: true
+    toc-title: Contenido
+    number-sections: false
+    embed-resources: true
+    theme: cosmo
+  pdf:
+    toc: true
+    toc-title: Contenido
+    number-sections: false
+    papersize: letter
+    geometry: margin=2.5cm
+    pdf-engine: xelatex
+    include-in-header:
+      text: |
+        \usepackage{newunicodechar}
+        \newunicodechar{→}{\ensuremath{\rightarrow}}
+        \newunicodechar{×}{\ensuremath{\times}}
 ---
-
-# Base de Datos de Actores de la Gobernanza del Litio en Chile
-
-**Informe de presentación**
 
 *Las referencias completas de las obras citadas están en
 `references/referencias.bib` del repositorio. Todos los conteos reportados en
 la sección 4 fueron verificados programáticamente contra la base
 (`scripts/build_processed.py`).*
-
----
 
 ## 1. Introducción al caso
 

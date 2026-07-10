@@ -12,7 +12,8 @@ sociales (SNA)**: sus módulos de multiafiliación y de foros se convierten
 directamente en matrices de incidencia bipartitas (actor × organización y
 actor × evento), y sus campos de período permiten cortes longitudinales por
 hitos de gobernanza. El informe que la presenta y justifica está en
-[`docs/informe.md`](docs/informe.md).
+[`docs/informe.pdf`](docs/informe.pdf) (fuente Quarto en
+[`docs/informe.qmd`](docs/informe.qmd)).
 
 ## Contenido en cifras
 
@@ -38,10 +39,10 @@ Los conteos se verifican programáticamente con `scripts/build_processed.py`.
 │   │   ├── BBDD_Actores_procesada.xlsx    con pestaña RESUMEN y fechas corregidas
 │   │   └── csv/               un CSV tidy (UTF-8) por pestaña
 │   └── data_dictionary.md     documentación de pestañas, campos e inconsistencias
-├── docs/                      sitio GitHub Pages (Jekyll) + informe
-│   ├── index.md               portada del sitio
-│   ├── informe.md             informe de presentación de la base
-│   ├── _config.yml            configuración Jekyll (tema Cayman)
+├── docs/                      informe de presentación y su render
+│   ├── informe.qmd            fuente del informe (Quarto)
+│   ├── informe.html           informe renderizado (HTML autocontenido)
+│   ├── informe.pdf            informe renderizado (PDF)
 │   └── Estructura_informe_BBDD.pdf
 ├── references/
 │   └── referencias.bib        obras citadas en el informe (BibTeX, con DOI)
@@ -64,7 +65,7 @@ Criterio de inclusión: actor (persona u organización) con participación
 documentada en el ecosistema del litio chileno. Criterio de afiliación:
 membresía institucional formal (cargo, directorio, comisión). Cada
 participación en foros registra su fuente (URL). La justificación metodológica
-completa está en la sección 3 del [informe](docs/informe.md).
+completa está en la sección 3 del [informe](docs/informe.pdf).
 
 ## Reproducibilidad
 
@@ -79,13 +80,17 @@ corrección aplicada al procesado está codificada en el script y documentada en
 [`data/data_dictionary.md`](data/data_dictionary.md) (sección
 "Inconsistencias detectadas y tratamiento").
 
-## Sitio web (GitHub Pages)
+## Informe
 
-La carpeta `docs/` está preparada como sitio Jekyll. Para activarlo, en GitHub:
-**Settings → Pages → Build and deployment → Deploy from a branch →**
-rama `main`, carpeta `/docs`. El sitio quedará en
-`https://USUARIO.github.io/REPO/` con la portada (`index.md`) y el informe
-renderizado.
+El informe de presentación se edita en `docs/informe.qmd` y se renderiza a
+[PDF](docs/informe.pdf) con [Quarto](https://quarto.org):
+
+```bash
+quarto render docs/informe.qmd --to pdf
+```
+
+El mismo comando sin `--to pdf` genera además una versión HTML local (no
+versionada).
 
 ## Limitaciones
 
@@ -96,24 +101,6 @@ renderizado.
   corresponden a la versión archivada en `data/raw/`.
 - 33 de los 137 eventos de la base de participaciones aún no tienen ficha en
   el índice de eventos.
-
-## Cómo citar
-
-> Briceño, D. (2026). *Base de Datos de Actores de la Gobernanza del Litio en
-> Chile* [Base de datos]. https://github.com/USUARIO/REPO
-
-```bibtex
-@misc{briceno2026bbddlitio,
-  author = {Brice{\~n}o, Dar{\'i}o},
-  title  = {Base de Datos de Actores de la Gobernanza del Litio en Chile},
-  year   = {2026},
-  url    = {https://github.com/USUARIO/REPO},
-  note   = {Base de datos}
-}
-```
-
-*(Actualizar `USUARIO/REPO` con la URL definitiva; si la base se deposita en
-Zenodo u otro repositorio, reemplazar por el DOI.)*
 
 ## Licencia y uso de datos
 
