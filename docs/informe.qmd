@@ -35,20 +35,18 @@ la sección 4 fueron verificados programáticamente contra la base
 La transición energética global depende de un conjunto acotado de minerales
 críticos, y el litio está en el centro de esa dependencia: es insumo esencial de
 las baterías que hacen posible la movilidad eléctrica y el almacenamiento de
-energía renovable (Vera et al., 2023; Sánchez-López, 2023). Los depósitos más
+energía renovable (Sánchez-López, 2023). Los depósitos más
 competitivos del mundo se concentran en el llamado Triángulo del Litio —los
 salares altoandinos de Chile, Argentina y Bolivia—, donde Chile acumula
 aproximadamente un tercio de las reservas mundiales conocidas y el Salar de
 Atacama aporta cerca del 70% del litio de salmuera que se produce en el mundo
-(Gutiérrez & Ruiz-León, 2024; Jerez, Garcés & Torres, 2021). La forma en que
-se gobierne esa riqueza tiene, además, consecuencias fiscales de primer orden
-para el país (Olivares, Lagos & Singer, 2025).
+(Gutiérrez & Ruiz-León, 2024; Jerez, Garcés & Torres, 2021).
 
 El caso chileno tiene dos rasgos que lo particularizan: su modo de extracción y
 el conflicto hídrico que este produce. El litio se obtiene bombeando salmuera
 desde el núcleo del salar hacia piscinas de evaporación solar, en una cuenca
 hidrológica cerrada donde la evidencia documenta pérdida de superficie de
-lagunas y humedales (Vera et al., 2023; Jerez et al., 2021). A esto se añade un
+lagunas y humedales (Jerez et al., 2021). A esto se añade un
 estatus legal peculiar: la salmuera se administra como concesión minera y no
 como agua, de modo que las comunidades del salar carecen de standing jurídico
 sobre el recurso que más directamente afecta su forma de vida (Lunde
@@ -105,30 +103,27 @@ es lo que lleva a la perspectiva de redes. La literatura sobre gobernanza
 ambiental muestra de manera consistente que la estructura relacional del campo
 —quién se sienta con quién, quién intermedia entre quiénes— condiciona la
 coordinación, la influencia y la exclusión, más allá de las reglas formales
-(Bodin & Crona, 2009; Bodin, 2017). La gobernanza colaborativa de recursos
+(Bodin & Crona, 2009). La gobernanza colaborativa de recursos
 naturales es, en un sentido preciso, un problema de redes: los patrones de
 lazos entre actores determinan qué problemas de acción colectiva pueden
-resolverse y cuáles se enquistan (Bodin et al., 2019; Hedlund, Bodin &
-Nohrstedt, 2021; Angst et al., 2018).
+resolverse y cuáles se enquistan.
 
 Aplicado a la minería y al litio, el estado del arte deja un vacío visible. Lo
 que existe es de tres tipos: (a) el litio modelado como red de comercio y
 competencia entre países y firmas, en la tradición de las redes de cadenas de
-suministro (Shao, Hu & Zhang, 2021; Hao et al., 2022); (b) análisis de redes
+suministro (Hao et al., 2022); (b) análisis de redes
 de actores mineros para otros minerales y contextos, mayormente transversales
-y unimodales (Poveda-Bautista et al., 2022; Fuentes et al., 2024); y (c) el
+y unimodales (Fuentes et al., 2024); y (c) el
 stakeholder analysis relacional en la gestión de recursos naturales (Prell,
-Hubacek & Reed, 2009; Reed et al., 2009). Lo que falta es el eslabón inicial:
+Hubacek & Reed, 2009). Lo que falta es el eslabón inicial:
 nadie ha registrado sistemáticamente a los actores que gobiernan el litio en
 su punto de origen.
 
 Las redes que esta lista de actores permitiría construir son, ante todo, redes
 de afiliación: bipartitas actor–organización y actor–evento, con capacidad de
 proyección unimodal. Existen enfoques consolidados que trabajan con este tipo
-de datos —por ejemplo, la dualidad de personas y grupos de Breiger (1974), los
-modelos de interlocks de directorios (Robins & Alexander, 2004; Koskinen &
-Edling, 2012) o las mediciones de estatus acumulado en redes bipartitas de
-carreras de elite (Larsen, Lunding & Ellersgaard, 2025)—, y todos ellos
+de datos —por ejemplo, la dualidad de personas y grupos de Breiger (1974) o los
+modelos de interlocks de directorios (Koskinen & Edling, 2012)—, y ambos
 requieren como punto de partida una matriz de incidencia como la que esta base
 provee.
 
@@ -158,9 +153,8 @@ no reactividad, pues no depende de la disposición ni del recuerdo de actores
 de elite; (c) replicabilidad y auditabilidad, ya que cada afiliación registrada
 tiene fuente; y (d) cobertura de actores inaccesibles. Existen precedentes
 consolidados: redes de políticas reconstruidas desde archivos de prensa y
-testimonio parlamentario (Leifeld, 2017), interlocks desde registros de
-directorios (Koskinen & Edling, 2012) y redes desde registros de contratos
-públicos (Waxenecker & Prell, 2024). La limitación correlativa debe declararse:
+testimonio parlamentario (Leifeld, 2017) e interlocks desde registros de
+directorios (Koskinen & Edling, 2012). La limitación correlativa debe declararse:
 el sesgo de visibilidad mediática hace que los actores periféricos —en
 especial los comunitarios— tiendan al subregistro.
 
@@ -284,29 +278,14 @@ puente hacia un eventual análisis relacional del campo.
 
 ## Referencias
 
-Angst, M., Widmer, A., Fischer, M., & Ingold, K. (2018). Connectors and
-coordinators in natural resource governance: Insights from Swiss water supply.
-*Ecology and Society, 23*(2), 1. https://doi.org/10.5751/ES-10030-230201
-
 Barandiarán, J. (2019). Lithium and development imaginaries in Chile,
 Argentina and Bolivia. *World Development, 113*, 381–391.
 https://doi.org/10.1016/j.worlddev.2018.09.019
-
-Bodin, Ö. (2017). Collaborative environmental governance: Achieving
-collective action in social-ecological systems. *Science, 357*(6352),
-aaan1114. https://doi.org/10.1126/science.aan1114
 
 Bodin, Ö., & Crona, B. I. (2009). The role of social networks in natural
 resource governance: What relational patterns make a difference? *Global
 Environmental Change, 19*(3), 366–374.
 https://doi.org/10.1016/j.gloenvcha.2009.05.002
-
-Bodin, Ö., Alexander, S. M., Baggio, J., Barnes, M. L., Berardo, R., Cumming,
-G. S., Dee, L. E., Fischer, A. P., Fischer, M., Mancilla García, M., Guerrero,
-A. M., Hileman, J., Ingold, K., Matous, P., Morrison, T. H., Nohrstedt, D.,
-Pittman, J., Robins, G., & Sayles, J. S. (2019). Improving network approaches
-to the study of complex social-ecological interdependencies. *Nature
-Sustainability, 2*(7), 551–559. https://doi.org/10.1038/s41893-019-0308-0
 
 Breiger, R. L. (1974). The duality of persons and groups. *Social Forces,
 53*(2), 181–190. https://doi.org/10.1093/sf/53.2.181
@@ -328,10 +307,6 @@ Hao, H., Xing, W., Wang, A., Song, H., Han, Y., Zhao, P., Xie, Z., & Chen, X.
 lithium industry chain. *Resources Policy, 79*, 102933.
 https://doi.org/10.1016/j.resourpol.2022.102933
 
-Hedlund, J., Bodin, Ö., & Nohrstedt, D. (2021). Policy issue interdependency
-and the formation of collaborative networks. *People and Nature, 3*(1),
-236–250. https://doi.org/10.1002/pan3.10170
-
 Jerez, B., Garcés, I., & Torres, R. (2021). Lithium extractivism and water
 injustices in the Salar de Atacama, Chile: The colonial shadow of green
 electromobility. *Political Geography, 87*, 102382.
@@ -346,11 +321,6 @@ https://doi.org/10.1016/j.exis.2024.101534
 Koskinen, J., & Edling, C. (2012). Modelling the evolution of a bipartite
 network—Peer referral in interlocking directorates. *Social Networks, 34*(3),
 309–322. https://doi.org/10.1016/j.socnet.2010.06.001
-
-Larsen, A. G., Lunding, J. A., & Ellersgaard, C. H. (2025). Overlapping
-social circles in historical elite career networks: Measuring accumulated
-social status with 'k-circles' and circle esteem in bipartite networks.
-*Social Networks, 83*, 28–49. https://doi.org/10.1016/j.socnet.2025.04.006
 
 Leifeld, P. (2017). Discourse network analysis: Policy debates as dynamic
 networks. En J. N. Victor, A. H. Montgomery & M. Lubell (Eds.), *The Oxford
@@ -374,49 +344,14 @@ peoples and extractive industry in the Salar de Atacama, Chile: When is an
 agreement more than a contract? *Development and Change, 54*(3), 641–670.
 https://doi.org/10.1111/dech.12767
 
-Olivares, F., Lagos, G., & Singer, M. (2025). How to maximize the Chilean
-government's revenue with the National Lithium Strategy? *Resources Policy,
-105*, 105600. https://doi.org/10.1016/j.resourpol.2025.105600
-
-Poveda-Bautista, R., González-Urango, H., Ramírez-Olivares, E., & Diego-Mas,
-J.-A. (2022). Engaging stakeholders in extraction problems of the Chilean
-mining industry through a combined social network analysis–analytic network
-process approach. *Complexity, 2022*, 9096744.
-https://doi.org/10.1155/2022/9096744
-
 Prell, C., Hubacek, K., & Reed, M. (2009). Stakeholder analysis and social
 network analysis in natural resource management. *Society & Natural
 Resources, 22*(6), 501–518. https://doi.org/10.1080/08941920802199202
-
-Reed, M. S., Graves, A., Dandy, N., Posthumus, H., Hubacek, K., Morris, J.,
-Prell, C., Quinn, C. H., & Stringer, L. C. (2009). Who's in and why? A
-typology of stakeholder analysis methods for natural resource management.
-*Journal of Environmental Management, 90*(5), 1933–1949.
-https://doi.org/10.1016/j.jenvman.2009.01.001
 
 Rice, E., Holloway, I. W., Barman-Adhikari, A., Fuentes, D., Brown, C. H., &
 Palinkas, L. A. (2014). A mixed methods approach to network data collection.
 *Field Methods, 26*(3), 252–268. https://doi.org/10.1177/1525822X13518168
 
-Robins, G., & Alexander, M. (2004). Small worlds among interlocking
-directors: Network structure and distance in bipartite graphs. *Computational
-& Mathematical Organization Theory, 10*(1), 69–94.
-https://doi.org/10.1023/B:CMOT.0000032580.12184.c0
-
 Sánchez-López, M. D. (2023). Geopolitics of the Li-ion battery value chain
 and the Lithium Triangle in South America. *Latin American Policy, 14*(1),
 22–45. https://doi.org/10.1111/lamp.12285
-
-Shao, L., Hu, J., & Zhang, H. (2021). Evolution of global lithium competition
-network pattern and its influence factors. *Resources Policy, 74*, 102353.
-https://doi.org/10.1016/j.resourpol.2021.102353
-
-Vera, M. L., Torres, W. R., Galli, C. I., Chagnes, A., & Flexer, V. (2023).
-Environmental impact of direct lithium extraction from brines. *Nature
-Reviews Earth & Environment, 4*(3), 149–165.
-https://doi.org/10.1038/s43017-022-00387-5
-
-Waxenecker, H., & Prell, C. (2024). Corruption dynamics in public
-procurement: A longitudinal network analysis of local construction contracts
-in Guatemala. *Social Networks, 79*, 154–167.
-https://doi.org/10.1016/j.socnet.2024.07.001

@@ -3,6 +3,9 @@
 bibliografía/
 bibliografia/
 
+# Borrador de trabajo de la estructura del informe: no se publica
+docs/Estructura_informe_BBDD.pdf
+
 # Temporales de Office / OneDrive
 ~$*
 *.tmp
@@ -18,6 +21,7 @@ venv/
 # Quarto (caché y archivos auxiliares de render)
 .quarto/
 docs/*_files/
+docs/*.tex
 # El HTML de Quarto incrusta la CSS de Bootstrap Icons (clases de marca sin
 # usar). No se versiona; el informe se distribuye como PDF.
 docs/informe.html
