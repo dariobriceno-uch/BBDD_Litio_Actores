@@ -45,7 +45,7 @@ Los conteos se verifican programáticamente con `scripts/build_processed.py`.
 │   ├── informe.pdf            informe renderizado (PDF)
 │   └── Estructura_informe_BBDD.pdf
 ├── references/
-│   └── referencias.bib        obras citadas en el informe (BibTeX, con DOI)
+│   └── referencias.bib        obras citadas en el informe (BibTeX)
 └── scripts/
     └── build_processed.py     genera data/processed/ desde data/raw/
 ```
